@@ -1,0 +1,70 @@
+.notes-header {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.search-form {
+  font-size: inherit;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  color: var(--color-text);
+  padding: 0.8em;
+  border: 2px solid var(--color-border-light);
+  border-radius: 0.7em;
+  gap: 1em;
+  flex-basis: 30%;
+}
+
+.search-form input {
+  width: 100%;
+  align-self: stretch;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+.search-form input::placeholder {
+  color: currentColor;
+}
+
+.action-area {
+  display: flex;
+  gap: 1.2em;
+}
+
+.action-item {
+  color: var(--color-text);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 0.5em 0.8em;
+  gap: 0.6em;
+
+  border-radius: 0.7em;
+}
+
+.action-area button {
+  outline: none;
+  cursor: pointer;
+  border: 2px solid var(--color-border-medium);
+}
+
+.action-area a:link,
+.action-area a:visited,
+.action-area a:hover,
+.action-area a:active {
+  text-decoration: none;
+  background-color: var(--color-text);
+  color: var(--color-brand);
+  font-weight: 600;
+  font-size: inherit;
+  border: none;
+}
