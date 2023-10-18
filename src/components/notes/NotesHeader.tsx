@@ -16,15 +16,15 @@ const NotesHeader = () => {
       </form>
       <div className={styles["action-area"]}>
         <Link href="/notes/new" className={styles["action-item"]}>
-          <Image src="icons/add.svg" alt="Add icon" height={24} width={24} />
+          <Image src="icons/add.svg" alt="Add icon" height={22} width={22} />
           New
         </Link>
         <button className={styles["action-item"]}>
           <Image
             src="icons/sort.svg"
             alt="Sort icon"
-            height={24}
-            width={24}
+            height={22}
+            width={22}
           ></Image>
           Sort
         </button>

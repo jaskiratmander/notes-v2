@@ -1,5 +1,42 @@
 .notes-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+  gap: 3em;
+  overflow-y: auto;
+  padding: 0 7rem 4rem;
+  margin-bottom: 3em;
+}
+
+.notes-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notes-grid::-webkit-scrollbar-thumb {
+  background-color: hsla(308, 24%, 80%, 0.5);
+  border-radius: 3px;
+}
+
+.grid-item {
+  height: 11em;
+  font-size: 1.1rem;
+  background-color: var(--color-background-note);
+
+  border-radius: 0.7em;
+  box-shadow: var(--shadow-note);
+}
+
+.grid-item a:link,
+.grid-item a:visited,
+.grid-item a:hover,
+.grid-item a:active {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.4em;
+  text-align: center;
 }

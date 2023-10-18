@@ -1,8 +1,9 @@
 :root {
   --color-brand: hsla(308, 48%, 17%, 1);
   --color-text: hsla(308, 24%, 80%, 1);
-  --color-text-note: hsla(308, 24%, 80%, 0.8);
-  --color-background-note: hsla(0, 0%, 100%, 0.1);
+  --color-text-note: hsla(308, 24%, 80%, 0.9);
+  --color-background-note: hwb(0 100% 0% / 0.1);
+  --color-note-title: hsla(308, 51%, 95%, 0.9);
 
   --color-white: hsla(0, 0%, 100%, 1);
   --color-black: hsla(0, 0%, 0%, 1);
@@ -43,6 +44,7 @@
 
 html {
   font-size: 0.875em;
+  /* font-size: calc(1vw - 0.1em); */
   box-sizing: border-box;
 }
 

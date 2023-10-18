@@ -1,0 +1,78 @@
+.note {
+  background-color: var(--color-background-note);
+  height: 100%;
+  margin: 0 7em 4em;
+  border-radius: 0.7em;
+  box-shadow: var(--shadow-note);
+  padding: 3em 2em;
+  font-size: 1rem;
+  overflow-y: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.note_header {
+  display: flex;
+  align-items: center;
+}
+
+.note_header > h2 {
+  font-size: 2.2em;
+  margin-right: auto;
+  color: var(--color-note-title);
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.note_actions {
+  margin-right: 3.5em;
+  align-self: stretch;
+  display: flex;
+  gap: 0.8em;
+}
+
+.note_actions button {
+  font-family: inherit;
+  color: hsla(0, 100%, 95%);
+  height: 100%;
+  border: none;
+  background-color: hsla(0, 100%, 100%, 0.1);
+  padding: 0.5em 1.2em;
+  border-radius: 0.7em;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.note_close:link,
+.note_close:visited,
+.note_close:hover,
+.note_close:active {
+  display: flex;
+  align-items: center;
+}
+
+.note_content {
+  font-size: 1.4em;
+  color: var(--color-text-note);
+  line-height: 1.6;
+  height: 100%;
+  font-weight: 400;
+
+  padding-right: 1em;
+  overflow-y: auto;
+}
+
+.note_content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.note_content::-webkit-scrollbar-thumb {
+  background-color: hsla(308, 24%, 80%, 0.5);
+  border-radius: 3px;
+}
+
+.note_content::-webkit-scrollbar-track {
+  margin-top: 0.45em;
+}
