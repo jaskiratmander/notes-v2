@@ -1,16 +1,18 @@
 import NotesHeader from "@/components/notes/NotesHeader";
-import Notes from "@/components/notes/Notes";
+import NotesGrid from "@/components/notes/NotesGrid";
 import Head from "next/head";
+import { motion } from "framer-motion";
+import styles from "./notesPage.module.css";
 
 const NotesPage = () => {
   return (
-    <>
+    <motion.div className={styles["notes-page"]}>
       <Head>
         <title>Notes</title>
       </Head>
       <NotesHeader />
-      <Notes />
-    </>
+      <NotesGrid />
+    </motion.div>
   );
 };
 

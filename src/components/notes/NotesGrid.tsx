@@ -1,4 +1,4 @@
-import styles from "./Notes.module.css";
+import styles from "./NotesGrid.module.css";
 import { DUMMY } from "@/DATA";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -34,6 +34,8 @@ const Notes = () => {
           key={note.id}
           className={styles["grid-item"]}
           transition={{ duration: 0.5, type: "spring" }}
+          style={{ borderRadius: 10 }}
+          whileHover={{ scale: 1.1 }}
         >
           <Link href={`/notes/${note.id}`}>
             <motion.span

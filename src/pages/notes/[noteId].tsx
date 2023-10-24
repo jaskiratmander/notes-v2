@@ -24,6 +24,7 @@ const NotePage = () => {
         className={styles["note"]}
         layoutId={note?.id}
         transition={{ duration: 0.5, type: "spring" }}
+        style={{ borderRadius: 10 }}
       >
         <motion.div className={styles["note_header"]}>
           <motion.h2
@@ -36,14 +37,16 @@ const NotePage = () => {
             <motion.button>Edit</motion.button>
             <motion.button>Delete</motion.button>
           </motion.div>
-          <Link href={"/notes"} className={styles["note_close"]}>
-            <Image
-              src="/icons/close.svg"
-              alt="Close Icon"
-              width={32}
-              height={32}
-            />
-          </Link>
+          <motion.div whileHover={{ scale: 1.2 }}>
+            <Link href={"/notes"} className={styles["note_close"]}>
+              <motion.img
+                src="/icons/close.svg"
+                alt="Close Icon"
+                width={32}
+                height={32}
+              />
+            </Link>
+          </motion.div>
         </motion.div>
         <motion.p
           className={styles["note_content"]}

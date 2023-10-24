@@ -62,6 +62,7 @@
 
   padding-right: 1em;
   overflow-y: auto;
+  mask-image: linear-gradient(to bottom, #000 95%, transparent);
 }
 
 .note_content::-webkit-scrollbar {
